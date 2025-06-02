@@ -31,5 +31,6 @@
 
 3. **Clone the Repository**  
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/Chris555xing/ECE228_LLM-Based-Agent-System-for-Automated-Weather-Disaster-Management.git
+   cd ECE228_LLM-Based-Agent-System-for-Automated-Weather-Disaster-Management
+
