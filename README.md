@@ -3,7 +3,6 @@
   - Contains all of the CSV data splits and the serialized Random Forest model.  
   - **`train.csv`**: Historical weather features (temperature, humidity, wind speed, precipitation, etc.) and a binary label (`label`) indicating whether a wildfire occurred.  
   - **`test.csv`**: The held-out test set for evaluating classifier performance.  
-  - **`rf_model.joblib`**: Serialized Random Forest model exported from `6models-wholedat.ipynb`. You can load this directly (skipping retraining) in `agent.ipynb` or any custom Python script.
 
 - **`6models-wholedat.ipynb`**  
   - Reads `data/train.csv` and `data/test.csv`, preprocesses features, trains six different ML classifiers (Logistic Regression, Random Forest, XGBoost, SVM, etc.), computes performance metrics (accuracy, ROC-AUC, F1, recall), and plots ROC curves.  
@@ -14,7 +13,9 @@
   - Demonstrates how the LLM agent wraps predictions in natural-language prompts.  
   - Requires a valid OpenAI API key or the endpoint of another GPT-compatible model.  
   - Shows sample email generation and deviation analysis.
-
+  
+- **`rf_model.joblib`**: Serialized Random Forest model exported from `6models-wholedat.ipynb`. You can load this directly (skipping retraining) in `agent.ipynb` or any custom Python script.
+  
 - **`poster.pptx`**  
   - Presentation-style poster that summarizes our approach, dataset, experimental results, and example agent outputs. Use this file to verify that your notebook outputs match the figures and text on the poster.
 
