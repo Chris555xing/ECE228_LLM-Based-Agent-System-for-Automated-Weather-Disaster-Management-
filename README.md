@@ -37,6 +37,9 @@ Below is a concise summary of the environment and prerequisites needed to run th
   python3 -m venv venv
   source venv/bin/activate        # macOS/Linux
   venv\Scripts\activate           # Windows
+  pip install --upgrade pip
+  pip install pandas numpy scikit-learn matplotlib seaborn joblib jupyterlab ipykernel
+
 - **API KEY**
   - Remember to export your own api key. Set as environment variable before launching Jupyter:
     ```bash
