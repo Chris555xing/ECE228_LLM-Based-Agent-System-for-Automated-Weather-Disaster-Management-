@@ -21,16 +21,26 @@
 
 ---
 
-## 🛠️ Requirements & Installation
+## Environment & Dependencies
 
-1. **Operating System**  
-   - Tested on Windows 10 (Python 3.8+), macOS 12+, and Ubuntu 20.04+.
+Below is a concise summary of the environment and prerequisites needed to run the two Jupyter notebooks in this repository.
 
-2. **Python Version**  
-   - Python 3.8 or later (we recommend 3.9).
+---
 
-3. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/Chris555xing/ECE228_LLM-Based-Agent-System-for-Automated-Weather-Disaster-Management.git
-   cd ECE228_LLM-Based-Agent-System-for-Automated-Weather-Disaster-Management
+### 1. Common Requirements
+
+- **Python Version**  
+  - Python 3.8 or later (3.9+ recommended).
+
+- **Virtual Environment (recommended)**  
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate        # macOS/Linux
+  venv\Scripts\activate           # Windows
+- **API KEY**
+  - Remember to export your own api key. Set as environment variable before launching Jupyter:
+    ```bash
+    export OPENAI_API_KEY="your_api_key_here"      # macOS/Linux
+    setx OPENAI_API_KEY "your_api_key_here"        # Windows (PowerShell)
+
 
