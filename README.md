@@ -45,5 +45,6 @@ Below is a concise summary of the environment and prerequisites needed to run th
     ```bash
     export OPENAI_API_KEY="your_api_key_here"      # macOS/Linux
     setx OPENAI_API_KEY "your_api_key_here"        # Windows (PowerShell)
-
+### 1. Common Requirements
+After setting the requirements below, you can run the `6models-wholedat.ipynb` and `agent.ipynb` to reproduce the result!
 
