@@ -11,7 +11,7 @@
 - **`agent.ipynb`**  
   - Loads `data/rf_model.joblib` to perform real-time wildfire risk prediction.  
   - Demonstrates how the LLM agent wraps predictions in natural-language prompts.  
-  - Requires a valid OpenAI API key or the endpoint of another GPT-compatible model.  
+  - Requires a valid Gemini API key or the endpoint of another GPT-compatible model.  
   - Shows sample email generation and deviation analysis.
   
 - **`rf_model.joblib`**: Serialized Random Forest model exported from `6models-wholedat.ipynb`. You can load this directly (skipping retraining) in `agent.ipynb` or any custom Python script.
