@@ -1,0 +1,322 @@
+
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>JupyterHub-UCSD</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="ORGANIZATION" content="University of California, San Diego">
+    <meta name="SITE" content="Data Science/Machine Learning Platform">
+    <meta name="PAGETITLE" content="Data Science/Machine Learning Platform">
+    <meta name="DESCRIPTION" content="UC San Diego's Data Science/Machine Learning Platform (DSMLP) provides undergraduate and graduate students with access to research-class CPU/GPU resources for coursework, formal independent study, and student projects.">
+
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/hub/static/custom/base.css?v=f090c725d711304ed8b4b5a4ed43f794572b95e75ac70ff203116465d0f232118e7f419afbbd5cedbd9942bba812701c48050fbd46ae1011353d42ce77b438c8" type="text/css">
+    
+    
+    <link rel="icon" href="/hub/static/favicon.ico?v=fde5757cd3892b979919d3b1faa88a410f28829feb5ba22b6cf069f2c6c98675fceef90f932e49b510e74d65c681d5846b943e7f7cc1b41867422f0481085c1f" type="image/x-icon">
+    
+
+    <script src="/hub/static/components/requirejs/require.js?v=bd1aa102bdb0b27fbf712b32cfcd29b016c272acf3d864ee8469376eaddd032cadcf827ff17c05a8c8e20061418fe58cf79947049f5c0dff3b4f73fcc8cad8ec" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/components/jquery/dist/jquery.min.js?v=69528a4518bf43f615fb89a3a0a06c138c771fe0647a0a0cfde9b8e8d3650aa3539946000e305b78d79f371615ee0894a74571202b6a76b6ea53b89569e64d5c" type="text/javascript" charset="utf-8"></script>
+    <script src="https://use.fontawesome.com/f25646ef91.js"></script>
+    <script src="/hub/static/components/bootstrap/dist/js/bootstrap.min.js?v=a014e9acc78d10a0a7a9fbaa29deac6ef17398542d9574b77b40bf446155d210fa43384757e3837da41b025998ebfab4b9b6f094033f9c226392b800df068bce" type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/custom/page.js?v=d67b5b2ae80bba4716fefa2a72ad1151db232f8c6a9ad53d9189ecd0e48f569152c297c09a1d967d83decdb956f801fe6d5cdea0df0e41a00ec25f424f517af8?version=12"  type="text/javascript" charset="utf-8"></script>
+    <script src="/hub/static/custom/spawn.js?v=380d70496626d09f2fab40063d151cf21dc4d09f71bcb681007141e187e2c08a5ef95864ce26bdd2e82047864b38648958bb176682cddc610d9413a3ee6b1986?version=12"  type="text/javascript" charset="utf-8"></script>
+
+    <script>
+      require.config({
+          
+          urlArgs: "v=20250601024753",
+          
+          baseUrl: '/hub/static/js',
+          paths: {
+            components: '../components',
+            jquery: '../components/jquery/dist/jquery.min',
+            bootstrap: '../components/bootstrap/dist/js/bootstrap.min',
+            moment: "../components/moment/moment",
+          },
+          shim: {
+            bootstrap: {
+              deps: ["jquery"],
+              exports: "bootstrap"
+            },
+          }
+      });
+    </script>
+
+    <script type="text/javascript">
+      window.jhdata = {
+        base_url: "/hub/",
+        prefix: "/",
+        
+        user: "chxing",
+        
+        
+        admin_access: false,
+        
+        
+        options_form: true,
+        
+      }
+    </script>
+
+    
+    
+
+</head>
+
+<body>
+<noscript>
+  <div id='noscript'>
+    JupyterHub requires JavaScript.<br>
+    Please enable it to proceed.
+  </div>
+</noscript>
+
+  <!--  This is for the banner   
+  
+    <div id="outage-banner"><style>#outage-banner div > p > a { text-decoration: underline; } .alert-banner { margin-bottom: 0px !important; } .alert-warning-banner { background-color: #f2dede; color: #a94442 !important; border-color: #a94442; border-radius: 0; } .alert-warning-banner a { color: #000 !important; border-color: #000 !important; } a.alert-link:hover { text-decoration: none; } #alertType {font-size: 1.5em;} .alert-banner .text-link { border-color: #000 !important; border-bottom: 1px solid #000; font-size: 16px; } .no-hero { margin: 18.5em 0 3em; } .row.spacer { margin-top: 95px; } @media only screen and (max-width: 990px) { .row.spacer { margin-top: 190px; } } @media only screen and (max-width: 768px) { #outage-banner { font-size: 13px; line-height: 1.4; } .alert-banner .text-link { font-size: 13px; } .layout-title { position: relative; } }</style><div style="display: block;" class="alert-banner alert-warning-banner text-center" role="alert-banner"> <div class="container no-gutter"> <div class="row"> <div id="alertType" class="col-xs-12 col-md-4 col-lg-3"><p></p> <strong><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Planned Maintenance </strong> </div> <div class="col-xs-12 col-md-7 col-lg-8"> <p></p><p>New users will not be able to login for approximately 30 min on <br> Tuesday Feb 16, 2021 7:30 AM - 8:00 AM</p><p></p></div></div> </div> </div></div>
+  
+-->
+  
+  <header class="layout-header">
+    <section class="layout-title">
+        <div class="layout-container container">
+          <a href="/hub/" class="title-header title-header-large">Datahub & Research Cluster <span style="font-size: large;">Powered by DSMLP</span></a>
+          <a href="/hub/" class="title-header title-header-short">DSMLP</a>
+            <a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a>
+        </div>
+    </section>
+  </header>
+ 
+
+
+
+<nav class="navbar navbar-main navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="col-sm-4 pull-right visible-xs-block">
+        <img src="/hub/static/custom/ucsd-footer-logo-white.png" alt="" class="img-responsive header-logo">
+      </div>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav" id="navbar-list">
+        <li class="nav-header-short"><a href="https://blink.ucsd.edu/sponsor/ITS/about/groups/academic-technology-services/index.html">ITS - ATS</a></li>
+        <li class="nav-header-large"><a href="https://blink.ucsd.edu/sponsor/ITS/about/groups/academic-technology-services/index.html">Information Technology Services - Academic Technology Services</a></li>
+        <li id="faqLink"><a target="_blank" href="https://support.ucsd.edu/services?id=kb_article_view&sysparm_article=KB0030470">FAQ</a></li>
+        <li id="helpOptions" class="dropdown">
+          <a class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mailto:datahub@ucsd.edu">Email: datahub@ucsd.edu</a></li>
+            <li><a href="https://support.ucsd.edu/services?id=kb_category&kb_category=368cc80fdb5c68d0d4781c79139619e2&kb_id=e343172edb3c1f40bd30f6e9af961996">Knowledge Base</a></li>
+          </ul>
+        </li>
+        <li id="sm-title-logo"><a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+
+
+        
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header-jupyter">
+        <span id="jupyterhub-logo" class="pull-left"><a href="/hub/"><img src="/hub/logo" alt="JupyterHub" class="jpy-logo" title="Spawner Options"></a></span>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#thenavbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="thenavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="/hub/home">Home</a></li>
+            <li><a href="/hub/token">Token</a></li>
+            <li><a href="/hub/status" target="_blank">Cluster Status</a></li>
+            <li><a href="/hub/datasets" target="_blank">DSMLP Datasets</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#dsmlpNewsModal" id="dsmlp-news">News</a></li>
+	  
+           
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+              
+              
+                <li><a class="dropdown-item" href="/services/disk-quota-service/">disk-quota-service</a></li>
+              
+              
+              
+                <li><a class="dropdown-item" href="/services/manual-resetter/">manual-resetter</a></li>
+              
+              
+              </ul>
+            </li>
+            
+      </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <span id="login_widget">
+                    <a id="logout" role="button" class="navbar-btn btn-sm btn btn-default" href="/hub/logout"> <i aria-hidden="true" class="fa fa-sign-out"></i> Logout</a>
+                </span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+
+
+<div class="modal fade" id="dsmlpNewsModal" tabindex="-1" role="dialog" aria-labelledby="dsmlpNewsModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="modal-title" id="dsmlpNewsModalLabel">Spring 2025 Update</h3>
+	</div>
+        <div class="modal-body">
+        <p>We have updated our stable images for the quarter! There have been major upgrades to TensorFlow, PyTorch and CUDA. For more information view the link below:</p>
+	<p><a href="https://github.com/ucsd-ets/datahub-docker-stack/wiki/Spring-2025-Stable-Image-Updates">Our Spring 2025 Stable Image Changelog</a></p>
+	<p>If you would like to try out the new environments on <a href="https://support.ucsd.edu/services?id=kb_article_view&sysparm_article=KB0032269">dsmlp-login before courses begin</a>, here are the following image URLs:</p>
+        <ul>
+          <li>ghcr.io/ucsd-ets/datascience-notebook:2025.2-stable</li>
+          <li>ghcr.io/ucsd-ets/rstudio-notebook:2025.2-stable</li>
+          <li>ghcr.io/ucsd-ets/scipy-ml-notebook:2025.2-stable</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="stationary-banner"></div>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      
+      <h1>
+      
+      Server not running
+      
+      </h1>
+      
+      
+      <p>
+        
+        Your server  is not running.
+          
+          Would you like to start it?
+          
+        
+      </p>
+      
+      
+      <a id="start" role="button" class="btn btn-lg btn-primary" href="/hub/spawn/chxing?next=%2Fhub%2Fuser%2Fchxing%2Ffiles%2Fproject%2F7models_comparison.ipynb%3F_xsrf%3DMnwxOjB8MTA6MTc0ODkxMDA4NHw1Ol94c3JmfDEzMjpOMlE0TXpGbVlqRm1OMkl3TkdSaE16aGtPV1ZsWm1JM05UYzNNMlkyWm1VNk9UWmpZV1F4TkdKaVpqQXpZbVZtWWpVNFlXSTRNRGc0TlRZek9XVXlNalk0TURGaE16RTBaVFkxWkdSak5tUXhZbVk1TkRsaFlqZGlNemsxTmpGbE5nPT18MDRhOTg1MThiNzI1OWEzMTIxZjViOWJiZDkzY2M5YjVlYzQ1MmMyMTRjYzc2YjkyYTA4MzAxNzgzOGQ5MWQyMA">
+        
+        Launch
+        
+        Server 
+      </a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="modal fade" id="error-dialog" tabindex="-1" role="dialog" aria-labelledby="error-label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="error-label">Error</h4>
+      </div>
+      <div class="modal-body">
+        
+  <div class="ajax-error">
+    The error
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div id="footer">
+        
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <p>
+                    <span>UC San Diego 9500 Gilman Dr. La Jolla, CA 92093 (858) 534-2230</span>
+                    <br>
+                    <span>
+                        Copyright © <span class="footer-copyright-year">2019</span> Regents of the University of California.
+                        All rights reserved.
+                    </span>
+                </p>
+                <ul class="footer-links">
+                    <li><a href="https://www.ucsd.edu/_about/legal/index.html">Terms &amp; Conditions</a></li>
+                    <li><a href="https://ucsdservicedesk.service-now.com/its?id=sc_category">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <img src="/hub/static/custom/ucsd-footer-logo-white.png" alt="" class="img-responsive footer-logo">
+            </div>
+        </div>
+    </div>
+</footer>    
+        
+    </div>
+
+
+
+  <script type="text/javascript">
+    let helpOptions = document.getElementById("helpOptions");
+
+    helpOptions.addEventListener("onmouseover", () => {
+      helpOptions.classList.add("open");
+    });
+
+    helpOptions.addEventListener("onemouseout", () => {
+      helpOptions.classList.remove("open");
+    });
+  </script>
+
+
+<script type="text/javascript">
+require(["not_running"]);
+</script>
+
+</body>
+
+</html>
