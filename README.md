@@ -73,7 +73,7 @@ Below is an example of how to include the main performance table from your poste
 To embed the ROC‐curve figure (exported from your poster) and any other poster images, save them (for example) in `images/roc_curve.png` and `images/poster_summary.png`. Then add:
 
 
-![ROC Curve Comparison](result/ROC curves.png)
+![ROC Curve Comparison](result/ROC_curves.png)
 *Figure 1: ROC curves for six classifiers on the test set.*
 
 ![Poster Overview](result/Example_email_response.png)
