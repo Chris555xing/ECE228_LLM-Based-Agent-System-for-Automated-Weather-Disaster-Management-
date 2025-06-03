@@ -67,15 +67,17 @@ Below is an example of how to include the main performance table from your poste
 > **Note:** Replace the above placeholder numbers with the exact values from your poster.
 
 ---
-
 ### 3.2 ROC Curves and Poster Figures
 
-![ROC Curve Comparison](result/ROC_curves.png)
-*Figure 1: ROC curves for six classifiers on the test set.*
+<figure>
+  <img src="result/ROC_curves.png" alt="ROC Curve Comparison">
+  <figcaption>Figure 1: ROC curves for six classifiers on the test set.</figcaption>
+</figure>
 
 ### 3.3 Example email response
 
-![Email Response](result/Example_email_response.png)
-*Figure 2: Excerpt from project poster summarizing data sources and methodology.*
-
+<figure>
+  <img src="result/Example_email_response.png" alt="Email Response">
+  <figcaption>Figure 2: Excerpt from project poster summarizing data sources and methodology.</figcaption>
+</figure>
 
