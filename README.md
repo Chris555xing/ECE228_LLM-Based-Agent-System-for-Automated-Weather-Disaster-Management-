@@ -1,4 +1,8 @@
-##### LLM Based Agent System for Automated Weather Disaster Management
+## LLM Based Agent System for Automated Weather Disaster Management
+
+Author: Xiang Gao, Chengpeng Xing, Siqi Wang, Xiaoyuan Ren
+
+ECE228_Machine Learning for Physical Application
 
 ### 1. Files Description
 - **`data/`**  
