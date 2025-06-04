@@ -22,10 +22,10 @@ ECE228_Machine Learning for Physical Application
 - **`agent.ipynb`**  
   - Loads `data/rf_model.joblib` to perform real-time wildfire risk prediction.  
   - Demonstrates how the LLM agent wraps predictions in natural-language prompts.  
-  - Requires a valid Gemini API key or the endpoint of another GPT-compatible model.  
+  - Requires a valid Gemini API key or the endpoint of another compatible model.  
   - Shows sample email generation and deviation analysis.
   
-- **`rf_model.joblib`**: Serialized Random Forest model exported from `6models-wholedat.ipynb`. You can load this directly (skipping retraining) in `agent.ipynb` or any custom Python script.
+- **`rf_model.joblib`**: Serialized Random Forest model exported from `7models_comparison.ipynb`. You can load this directly (skipping retraining) in `agent.ipynb` or any custom Python script.
   
 - **`poster.pptx`**  
   - Presentation-style poster that summarizes our approach, dataset, experimental results, and example agent outputs. Use this file to verify that your notebook outputs match the figures and text on the poster.
@@ -58,7 +58,7 @@ Below is a concise summary of the environment and prerequisites needed to run th
     setx API_KEY "your_api_key_here"        # Windows (PowerShell)
 ## 3. Results
 
-After installing all requirements, you can run both `6models-wholedata.ipynb` and `agent.ipynb` to reproduce the following tables and images.
+After installing all requirements, you can run both `7models_comparison.ipynb` and `agent.ipynb` to reproduce the following tables and images.
 
 ---
 
