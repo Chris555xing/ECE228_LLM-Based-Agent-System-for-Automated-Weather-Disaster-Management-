@@ -80,14 +80,14 @@ Below is the output comparison table of `7models_comparison.ipynb`
 
 <figure>
   <img src="result/ROC_curves.png" alt="ROC Curve Comparison">
-  <figcaption>Figure 1: ROC curves for six classifiers on the test set.</figcaption>
+  <figcaption>Figure 1: ROC curves for seven classifiers on the test set.</figcaption>
 </figure>
 
 ### 3.3 Example email response
 Below is the output of our weather agent.
 
 <figure>
-  <img src="result/Example_email_response.png" alt="Email Response">
-  <figcaption>Figure 2: Excerpt from project poster summarizing data sources and methodology.</figcaption>
+  <img src="result/Example_Email_Response.png" alt="Email Response">
+  <figcaption>Figure 2: Example email response.</figcaption>
 </figure>
 
