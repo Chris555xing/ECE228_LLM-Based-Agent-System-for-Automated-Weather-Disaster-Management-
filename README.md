@@ -54,8 +54,8 @@ Below is a concise summary of the environment and prerequisites needed to run th
 - **API KEY**
   - Remember to export your own api key. Set as environment variable before launching Jupyter:
     ```bash
-    export OPENAI_API_KEY="your_api_key_here"      # macOS/Linux
-    setx OPENAI_API_KEY "your_api_key_here"        # Windows (PowerShell)
+    export API_KEY="your_api_key_here"      # macOS/Linux
+    setx API_KEY "your_api_key_here"        # Windows (PowerShell)
 ## 3. Results
 
 After installing all requirements, you can run both `6models-wholedata.ipynb` and `agent.ipynb` to reproduce the following tables and images.
